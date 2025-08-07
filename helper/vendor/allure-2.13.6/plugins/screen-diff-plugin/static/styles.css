@@ -1,0 +1,58 @@
+.screen-diff__switchers {
+  margin-bottom: 1em;
+}
+
+.screen-diff__switchers label + label {
+  margin-left: 1em;
+}
+
+.screen-diff__overlay {
+  position: relative;
+  cursor: col-resize;
+}
+
+.screen-diff__container {
+  overflow-x: auto;
+}
+
+.screen-diff__image-over {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #1e1e1e;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 2px 0 1px -1px #1e1e1e;
+}
+
+.side-nav__brand {
+    background: url('https://cdn.prod.website-files.com/67a112ae7b5d4d9ec9dd803d/67cc5fa78ae876218718b039_Avla-Wordmark.svg') no-repeat center;
+    margin: 10px;
+}
+
+.side-nav{
+    background-color: #ffffff;
+    border-right: 4px solid #ffffff;
+}
+.side-nav__link_active{
+    color: #1e1e1e;
+    background-color: #0071ce;
+    border-right-color: #0071ce;
+}
+.side-nav__head {
+    margin: 0px 0;
+    background-color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 0px solid #0071ce;
+}
+.side-nav__text{
+    color: #1e1e1e;
+}
+.widget__title{
+    text-transform: none;
+    font-weight: 500;
+}
+.button_inverse{
+    color: #1e1e1e;
+    border-color: #1e1e1e;
+}

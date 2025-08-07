@@ -1,0 +1,55 @@
+.screen-diff__switchers {
+  margin-bottom: 1em;
+}
+
+.screen-diff__switchers label + label {
+  margin-left: 1em;
+}
+
+.screen-diff__overlay {
+  position: relative;
+  cursor: col-resize;
+}
+
+.screen-diff__container {
+  overflow-x: auto;
+}
+
+.screen-diff__image-over {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 2px 0 1px -1px #aaa;
+}
+
+.side-nav__brand {
+    background: url('logo.png') no-repeat left center;
+    margin-left: 10px;
+}
+
+.side-nav{
+    background-color: #009fe3;
+    border-right: 4px solid #009fe3;
+}
+.side-nav__link_active{
+    border-right-color: rgba(0, 0, 0, 0);
+}
+.side-nav__head {
+    margin: 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #009fe3;
+}
+.side-nav__text{
+    color: white;
+}
+.widget__title{
+    text-transform: none;
+    font-weight: 500;
+}
+.button_inverse{
+    color: white;
+    border-color: white;
+}

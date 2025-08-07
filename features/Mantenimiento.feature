@@ -1,0 +1,112 @@
+@regresion @mantenimiento
+Feature: Manutenção
+
+  @brokers
+  Scenario: Test - Validar la creación de un Intermediario
+    Given Estoy en el ingreso al portal sin loguearme
+    When Me logueo con las credenciales "admin"
+    And Despliego la seccion "Manutenção"
+    And Me dirijo a la seccion "Corretores"
+    And Presiono el boton "Novo"
+    And Selecciono en "ID Type" "SSN" en "General data"
+    And Agrego un "Name" "a" en "General data"
+    And Agrego un "Phone Number" "a" en "General data"
+    And Agrego un "Email" "a" en "General data"
+    And Agrego un "Agency License Number" "a" en "General data"
+    And Agrego un "ID Number" "a" en "General data"
+    And Selecciono en "Legal Person Type" "Individual / Sole proprietorship" en "General data"
+    And Seteo "Expiration" en "12/12/2030" en "General data"
+    And Presiono el boton "Add"
+    And Agrego un "Range" "50" en "General data"
+    And Presiono el boton "Request range"
+    And Presiono "Alaska" en "Agency Licenses"
+    And Selecciono "Physical" en "General data"
+    And Agrego un "Address Number" "a" en "General data"
+    And Agrego un "Street Name" "a" en "General data"
+    And Agrego un "ZIP Code" "a" en "General data"
+    And Selecciono en "State" "Arkansas" en "General data"
+    And Selecciono en "City" "ALLEENE" en "General data"
+    And Presiono "Add"
+    And Presiono "Save"
+    And Presiono "Yes"
+    And Me dirijo a la seccion "Corretores"
+    And Selecciono "SSN"
+    And Agrego un "ID Number"
+    And Presiono el boton para buscar
+    Then Valido que exista un resultado
+
+  @principals
+  Scenario: Test - Validar la creación de un Cliente
+    Given Estoy en el ingreso al portal sin loguearme
+    When Me logueo con las credenciales "admin"
+    And Despliego la seccion "Manutenção"
+    And Me dirijo a la seccion "Tomadores"
+    And Presiono el boton "Novo"
+    And Selecciono en "ID Type" "SSN" en "General data"
+    And Selecciono en "Legal Person Type" "Individual / Sole proprietorship" en "General data"
+    And Agrego un "ID Number" "a" en "General data"
+    And Agrego un "Name" "a" en "General data"
+    And Selecciono en "Nationality" "Argentina" en "General data"
+    And Selecciono en "Economic Activity" "100" en "General data"
+    And Seteo "Date of Birth" en "12/12/2002" en "General data"
+    And Agrego un "Phone Number" "a" en "General data"
+    And Selecciono "Physical" en "General data"
+    And Agrego un "Address Number" "a" en "General data"
+    And Agrego un "Street Name" "a" en "General data"
+    And Agrego un "ZIP Code" "a" en "General data"
+    And Selecciono en "State" "Arkansas" en "General data"
+    And Selecciono en "City" "ALLEENE" en "General data"
+    And Seteo "Broker" en "Broker TEST" en "General data"
+    And Selecciono en "ID Type" "SSN" en "Shareholdes information"
+    And Selecciono en "Legal Person Type" "Individual" en "Shareholdes information"
+    And Agrego un "ID Number" "a" en "Shareholdes information"
+    And Agrego un "Name" "a" en "Shareholdes information"
+    And Agrego un "DBA" "a" en "Shareholdes information"
+    And Selecciono "Physical" en "Shareholdes information"
+    And Agrego un "Address Number" "a" en "Shareholdes information"
+    And Agrego un "Street Name" "a" en "Shareholdes information"
+    And Agrego un "ZIP Code" "a" en "Shareholdes information"
+    And Selecciono en "State" "Arkansas" en "Shareholdes information"
+    And Selecciono en "City" "ALLEENE" en "Shareholdes information"
+    And Agrego un "Phone Number" "a" en "Shareholdes information"
+    And Agrego un "Email" "a" en "Shareholdes information"
+    And Agrego un "Percentage Ownership" "100" en "Shareholdes information"
+    And Seteo "Date of Birth" en "12/12/2002" en "Shareholdes information"
+    And Selecciono en "Economic Group" "GROUP TEST 1" en "Shareholdes information"
+    And Presiono "Add"
+    And Presiono "Save"
+    And Presiono "Yes"
+    And Me dirijo a la seccion "Tomadores"
+    And Selecciono "SSN"
+    And Agrego un "ID Number"
+    And Presiono el boton para buscar
+    Then Valido que exista un resultado
+
+  @obligees
+  Scenario: Test - Validar la creación de un Beneficiario
+    Given Estoy en el ingreso al portal sin loguearme
+    When Me logueo con las credenciales "admin"
+    And Despliego la seccion "Manutenção"
+    And Me dirijo a la seccion "Congenêres"
+    And Presiono el boton "Novo"
+    And Selecciono en "ID Type" "SSN" en "General data"
+    And Selecciono en "Legal Person Type" "Individual" en "General data"
+    And Agrego un "ID Number" "a" en "General data"
+    And Agrego un "Name" "a" en "General data"
+    And Selecciono en "Company Type" "Public" en "General data"
+    And Selecciono "Physical" en "General data"
+    And Agrego un "Address Number" "a" en "General data"
+    And Agrego un "Street Name" "a" en "General data"
+    And Agrego un "Street Name 2" "a" en "General data"
+    And Agrego un "ZIP Code" "a" en "General data"
+    And Selecciono en "State" "Arkansas" en "General data"
+    And Selecciono en "City" "ALLEENE" en "General data"
+    And Presiono "Add"
+    And Presiono "Save"
+    And Presiono "Yes"
+    And Me dirijo a la seccion "Congenêres"
+    And Selecciono "SSN"
+    And Agrego un "ID Number"
+    And Presiono el boton para buscar
+    Then Valido que exista un resultado
+
