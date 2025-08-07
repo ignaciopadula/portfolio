@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proyecto <name_project>
 
 _Arquetipo BDD y ATDD en lenguaje Python para automatización de pruebas funcionales_
